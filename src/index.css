@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 1px 10px rgb(185, 185, 185);
+  background-color: rgb(255, 233, 239);
+  padding: 30px 0;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.navbar-links a {
+  color: rgb(211, 18, 79);
+  text-decoration: none;
+  padding: 0 30px;
+  font-size: large;
+}
+.navbar-links a:hover {
+  color: rgb(211, 18, 79);
+  text-shadow: 0px 0px 1px rgb(211, 18, 79);
+}
+.navbar-links {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+}
+.navbar h1 {
+  margin-left: 100px;
+  font-size: 50px;
+  color: rgb(211, 18, 79);
+}
+.home,
+.blog-details,
+.create,
+.not-found {
+  background-color: rgb(255, 214, 228);
+  margin-top: -40px;
+  height: 100%;
+  min-height: 100vh;
+}
+.home h1,
+.blog-details h2,
+.create h2,
+.not-found h2 {
+  color: rgb(129, 0, 41);
+  font-size: 30px;
+  padding: 100px 0 30px 100px;
+}
+.create button,
+.blog-details button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: rgb(255, 233, 239);
+  background-color: rgb(211, 18, 79);
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+  border: 0;
+  transition: 0.2s ease-in-out;
+}
+.create button:hover,
+.blog-details button:hover {
+  background-color: rgb(133, 0, 42);
+}
+.create button:disabled {
+  color: rgba(255, 233, 239, 0.6);
+  background-color: rgba(211, 18, 79, 0.6);
+}
+.blog-preview {
+  color: rgba(191, 14, 70, 0.868);
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+.blog-list {
+  width: 30%;
+  margin: 0 80px;
+  word-wrap: break-word;
+}
+.blog-preview:hover {
+  box-shadow: 0px 0px 5px rgb(255, 150, 183);
+}
+.blog-preview h2 {
+  font-size: 20px;
+}
+.loading-message,
+.error-message {
+  font-size: 18px;
+  color: rgba(102, 1, 33, 0.596);
+  padding-left: 100px;
+  padding-bottom: 20px;
+  height: 100vh;
+}
+.loading,
+.error {
+  font-size: 18px;
+  color: rgba(102, 1, 33, 0.596);
+  padding-left: 100px;
+  padding-top: 100px;
+  height: 100vh;
+}
+.blog-link {
+  text-decoration: none;
+}
+.blog-link:active {
+  color: rgba(253, 4, 83, 0.868);
+}
+.blog-link:visited {
+  color: rgba(170, 56, 92, 0.868);
+}
+.blog-link:link {
+  color: rgba(191, 14, 70, 0.868);
+}
+.blog-details p,
+.not-found p {
+  color: rgba(191, 14, 70, 0.868);
+  font-size: 20px;
+  padding: 0 0 40px 100px;
+  font-weight: bold;
+}
+.blog-body {
+  color: rgba(149, 10, 54, 0.868);
+  padding: 0 100px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.create form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding-left: 100px;
+}
+.create label {
+  color: rgba(149, 10, 54, 0.868);
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.label-body,
+.label-author {
+  padding-top: 30px;
+}
+.create input,
+.create textarea,
+.create select {
+  background-color: rgb(255, 233, 239);
+  border: 1px solid rgba(191, 14, 70, 0.868);
+  border-radius: 5px;
+  color: rgb(129, 0, 41);
+  padding: 5px;
+}
+.create input:focus,
+.create textarea:focus,
+.create select:focus {
+  border: 2px solid rgba(191, 14, 70, 0.868);
+  outline: none;
+}
+.create textarea {
+  min-height: 100px;
+}
+.not-found a {
+  text-decoration: none;
+  background-color: rgb(211, 18, 79);
+  color: rgb(255, 233, 239);
+  font-size: 14px;
+  margin-left: 100px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.2s ease-in-out;
+}
+.not-found a:hover {
+  background-color: rgb(133, 0, 42);
+}
+.post-alert,
+.delete-alert {
+  background-color: rgb(129, 0, 41) !important;
+  color: rgb(255, 214, 228) !important;
+  border-radius: 7px !important;
+  text-align: center !important;
+}
+.Toastify__progress-bar {
+  background-color: rgb(247, 51, 113) !important;
+}
